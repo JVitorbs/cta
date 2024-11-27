@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato de Emergência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <button class="menu-button" onclick="toggleSidebar()">☰</button>
+        <h1>Emergência</h1>
+    </header>
+
+    <aside class="sidebar">
+        <button class="close-button" onclick="toggleSidebar()">✖</button>
+        <nav>
+            <ul>
+                <li><a href="#add-contact" onclick="toggleSidebar()">Adicionar Contato</a></li>
+                <li><a href="#contact-list" onclick="toggleSidebar()">Lista de Contatos</a></li>
+                <li><a href="#sos-button" onclick="toggleSidebar()">SOS</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="container">
+        <h2>Contatos de Emergência</h2>
+        <ul id="contactList" class="contact-list">
+            <!-- Os contatos serão preenchidos via JavaScript -->
+        </ul>
+        <a href="contatos.html" class="button">Gerenciar Contatos</a>
+        <button class="button sos" onclick="triggerSOS()">Botão SOS</button>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2024 - Sistema de Contato de Emergência</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

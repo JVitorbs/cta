@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Gerenciar Contatos</title>
+    <link rel="stylesheet" href="contatos.css">
+</head>
+<body>
+    <header class="header">
+        <button class="menu-button" onclick="toggleSidebar()">☰</button>
+        <h1>Contatos</h1>
+    </header>
+
+    <aside class="sidebar">
+        <button class="close-button" onclick="toggleSidebar()">✖</button>
+        <nav>
+            <ul>
+                <li><a href="#add-contact" onclick="toggleSidebar()">Adicionar Contato</a></li>
+                <li><a href="#contact-list" onclick="toggleSidebar()">Lista de Contatos</a></li>
+                <li><a href="#sos-button" onclick="toggleSidebar()">SOS</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="container">
+        <h2>Adicionar Contato</h2>
+        <input type="text" id="contactInput" placeholder="Digite o nome do contato" class="input" required>
+        
+        <input type="text" id="cellphoneInput" placeholder="Número de celular" class="input" required>
+        
+        <input type="text" id="relationshipInput" placeholder="O que é da pessoa (ex: irmão, filho)" class="input" required>
+        
+        <button onclick="addContact()" class="button">Adicionar</button>
+
+        <h2>Lista de Contatos</h2>
+        <ul id="contactList" class="contact-list">
+            <!-- Os contatos serão preenchidos via JavaScript -->
+        </ul>
+
+        <a href="index.html" class="button">Voltar</a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
